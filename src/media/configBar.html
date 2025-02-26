@@ -1,0 +1,34 @@
+<!-- src/media/sidebar.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="${cssUri}">
+    <title>DevPair</title>
+</head>
+
+<body>
+    <h1>DevPair Configuration</h1>
+
+    <div id="config-form">
+        <label for="llm.url">LLM Server URL:</label>
+        <input type="text" id="llm.url" name="devpair.llm.url"><br><br>
+
+        <label for="llm.model">LLM Model:</label>
+        <input type="text" id="llm.model" name="devpair.llm.model"><br><br>
+
+        <label for="llm.temperature">LLM Temperature (0-1):</label>
+        <input type="number" id="llm.temperature" name="devpair.llm.temperature" min="0" max="1" step="0.1"><br><br>
+
+        <label for="llm.maxTokens">LLM Max Tokens:</label>
+        <input type="number" id="llm.maxTokens" name="devpair.llm.maxTokens" min="1"><br><br>
+    </div>
+
+    <button id="save-config">Save Configuration</button>
+
+    <script src="${scriptUri}"></script>
+</body>
+
+</html>
